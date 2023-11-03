@@ -1,39 +1,48 @@
-body {
+html {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+	background-color: #111;
+	color: #ccc
+}
+
+#main-content {
 	width: 600px;
-	background-color: #7e694d;
+	background-color: #323;
 	margin: 20px auto;
 	padding: 0px 0px 20px 20px;
 	border: 5px solid black;
 	border-radius: 15px;
 }
 
-img {
+#catpic {
     width: 500px;
-    height: 500px; 
+    height: 500px;
+	border-radius: 15px;
 }
 
-html {
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-	background-color: #111;
+.navHead {
+	list-style-type: none;
+	position: sticky;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 3px solid #222;
+	background-color: #333;
 }
-
-h1 {
-	color:azure;
-	font-size: 60px;
-	text-align: center;
-  }
   
-p,
-li {
-	color:azure;
-	font-size: 16px;
-	line-height: 2;
-	letter-spacing: 1px;
+.navElem {
+	float: left;
 }
-
-button {
-	background-color:	#333;
-	color: azure;
+  
+.navLink {
+	display: block;
+	color: #ccc;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
-
+  
+.navLink:hover { /* вот тут начинаются приколы*/
+	background-color: #323;
+}
