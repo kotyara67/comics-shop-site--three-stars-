@@ -1,3 +1,4 @@
+/* шрифт */
 html {
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
@@ -5,12 +6,15 @@ html {
 	color: #ccc
 }
 
+
+
+/* филлерный див */
 #main-content {
 	width: 600px;
-	background-color: #323;
+	background-color: #324;
 	margin: 20px auto;
 	padding: 0px 0px 20px 20px;
-	border: 5px solid black;
+	border: 5px solid #555;
 	border-radius: 15px;
 }
 
@@ -20,6 +24,9 @@ html {
 	border-radius: 15px;
 }
 
+
+
+/* навигация */
 .navHead {
 	list-style-type: none;
 	position: sticky;
@@ -27,12 +34,20 @@ html {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	border: 3px solid #222;
+	border: 3px solid #444;
 	background-color: #333;
 }
-  
-.navElem {
+
+.navElem{
+	border-right: 3px solid #444;
+}
+
+.float-left {
 	float: left;
+}
+
+.float-right {
+	float: right;
 }
   
 .navLink {
@@ -41,8 +56,24 @@ html {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	transition: 300ms;		/* https://developer.mozilla.org/ru/docs/Web/CSS/transition */
 }
   
-.navLink:hover { /* вот тут начинаются приколы*/
-	background-color: #323;
+.navLink:hover {		/* https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes */
+	background-color: #324;
+	color: #fff;
+}
+
+.navCart {
+	display: block;
+	color: #ccc;
+	text-align: center;
+	padding: 2px 2px;
+	text-decoration: none;
+	font-size: 36px;
+	transition: 300ms;
+}
+
+.navCart:hover {
+	background-color: #324;
 }
