@@ -1,0 +1,27 @@
+.catElem{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+	margin-top: 15px;
+	text-decoration: none;
+	color: #aaa;
+	transition: 200ms;
+	max-width: 60%;
+}
+
+.catElem:hover{
+	color: #fff;
+}
+
+.catImg{
+	display: block;
+	margin: 5px;
+	width: 165px;
+	height: 255px;
+	border: 3px solid #444;
+	border-radius: 10px;
+}
+
+.catText{
+	display: block;
+}

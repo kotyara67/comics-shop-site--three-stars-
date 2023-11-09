@@ -1,0 +1,49 @@
+/* навигация */
+
+.navHead {
+	list-style-type: none;
+	position: sticky;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	border: 3px solid #444;
+	background-color: #333;
+}
+
+.navElemLeft{
+	float: left;
+	/*border-right: 3px solid #444;*/
+}
+
+.navElemRight{
+	float: right;
+	border-left: 3px solid #444;
+}
+  
+.navLink {
+	display: block;
+	color: #999;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 300ms;		/* https://developer.mozilla.org/ru/docs/Web/CSS/transition */
+}
+  
+.navLink:hover {		/* https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes */
+	color: #fff;
+}
+
+.navCart {
+	display: block;
+	color: #ccc;
+	text-align: center;
+	padding: 2px 2px;
+	text-decoration: none;
+	font-size: 36px;
+	transition: 200ms;
+}
+
+.navCart:hover {
+	background-color: #444;
+}
