@@ -1,5 +1,12 @@
 /* навигация */
 
+:root{
+	--color1: #264653;
+	--color2: #2a9d8f;
+	--color3: #e76f51;
+	--color4: #f4a261;
+}
+
 .navHead {
 	list-style-type: none;
 	position: sticky;
@@ -35,6 +42,7 @@
   
 .navLink:hover {		/* https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes */
 	color: #fff;
+	text-shadow: var(--color3) 1px 1px 5px;
 }
 
 .navCart {
@@ -48,5 +56,5 @@
 }
 
 .navCart:hover {
-	background-color: #444;
+	background-color: var(--color4);
 }

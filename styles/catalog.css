@@ -1,13 +1,22 @@
+/*Каталог*/
+
+:root{
+	--color1: #264653;
+	--color2: #2a9d8f;
+	--color3: #e76f51;
+	--color4: #f4a261;
+}
+
 .catElem{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 	margin-top: 15px;
-	margin-left: 15%;
+	margin-left: 25%;
 	text-decoration: none;
 	color: #aaa;
 	transition: 200ms;
-	max-width: 60%;
+	max-width: 50%;
 }
 
 .catElem:hover{
@@ -25,11 +34,20 @@
 }
 
 .catElem:hover .catImg{
-	border: 3px solid #aaa;
+	border: 3px solid var(--color3);
 }
 
 .catText{
 	display: block;
+}
+
+.price{
+	color: var(--color3);
+	transition: 200ms;
+}
+
+.catElem:hover .price{
+	color: var(--color4);
 }
 
 .catDivButt{
@@ -39,16 +57,16 @@
 .catBuyButt{
 	padding: 5px 5px;
 	text-decoration: none;
-	transition: 200ms;
+	transition: 300ms;
 	border-radius: 15px;
-	border: 3px solid #eb0;
+	border: 3px solid var(--color3);
 	background-color: #444;
-	color: #fff;
+	color: #ccc;
 }
 
 
 .catBuyButt:hover{
 	border: 3px solid #fff;
-	background-color: #eb0;
+	background-color: var(--color4);
 	color: #222;
 }
