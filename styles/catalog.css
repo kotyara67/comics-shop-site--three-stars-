@@ -12,11 +12,26 @@
     flex-direction: row;
     justify-content: flex-start;
 	margin-top: 15px;
-	margin-left: 25%;
+	margin-left: 20%;
 	text-decoration: none;
 	color: #aaa;
 	transition: 200ms;
 	max-width: 50%;
+}
+
+.lable{
+	transition: 150ms;
+	font-size: larger;
+}
+
+.catElem:hover .lable{
+	text-shadow:
+	1px 1px 3px #f4a261,
+	2px 2px 3px #e76f51;
+}
+
+.description{
+	font-size: smaller;
 }
 
 .catElem:hover{
