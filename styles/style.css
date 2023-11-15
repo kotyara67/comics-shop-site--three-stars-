@@ -2,24 +2,6 @@
 html {
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
-	background-color: #111;
+		background: linear-gradient(to bottom right, #111, rgb(66, 46, 41));
 	color: #ccc
-}
-
-
-
-/* филлерный див */
-#main-content {
-	width: 600px;
-	background-color: #324;
-	margin: 20px auto;
-	padding: 0px 0px 20px 20px;
-	border: 5px solid #555;
-	border-radius: 15px;
-}
-
-#catpic {
-    width: 500px;
-    height: 500px;
-	border-radius: 15px;
 }
