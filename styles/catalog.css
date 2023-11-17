@@ -7,6 +7,10 @@
 	--color4: #f4a261;
 }
 
+.catDiv{
+	padding-right: 5px;
+}
+
 .catElem{
     display: flex;
     flex-direction: row;
@@ -16,12 +20,14 @@
 	text-decoration: none;
 	color: #aaa;
 	transition: 200ms;
-	max-width: 50%;
+	max-width: 65%;
 }
 
 .lable{
 	transition: 150ms;
-	font-size: larger;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .catElem:hover .lable{
@@ -50,6 +56,8 @@
 
 .catElem:hover .catImg{
 	border: 3px solid var(--color3);
+	box-shadow:
+	0px 0px 10px #e76f51;
 }
 
 .catText{

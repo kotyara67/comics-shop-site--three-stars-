@@ -10,9 +10,47 @@ html {
 .lableText{
 	color: #fff;
 	padding-left: 21%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	text-shadow:
 	1px 1px 2px #f4a261,
 	2px 2px 4px #e76f51;
+	transition: 200ms;
+}
+
+.lableText:hover{
+	text-shadow:
+	-1px -1px 2px #f4a261,
+	-2px -2px 4px #e76f51;
+}
+
+.infoDiv{
+	margin-left: 22%;
+	transition: 200ms;
+	max-width: 60%
+}
+
+.infoText{
+	color: #fff;
+	text-shadow:
+	1px 1px 1px #f4a261,
+	2px 2px 3px #e76f51;
+	transition: 200ms;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.infoText:hover{
+	transform:	translate(8px);
+}
+
+.infoDiv:hover .infoText{
+	text-shadow:
+	1px 1px 1px #f4a261;
 }
 
 .yaMapDiv{
