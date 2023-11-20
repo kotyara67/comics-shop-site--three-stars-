@@ -1,58 +1,105 @@
+:root{
+	--color1: #264653;
+	--color2: #2a9d8f;
+	--color3: #e76f51;
+	--color4: #f4a261;
+}
+
 #wrapper {
-    width: 100%;
-    max-width: 964px;
-    position: relative;
-    margin-left: 22%;
-    margin-top: 25px;
-  }
-  
-  #carousel {
-    overflow: auto;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-  }
-  
-  #carousel::-webkit-scrollbar {
-    height: 0;
-  }
-  
-  #prev,
-  #next {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background: white;
-    border: none;
-    padding: 8px;
-    border-radius: 50%;
-    outline: 0;
-    cursor: pointer;
-    position: absolute;
-  }
-  
-  #prev {
-    top: 50%;
-    left: 0;
-    transform: translate(50%, -50%);
-    display: none;
-  }
-  
-  #next {
-    top: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
-  }
-  
-  #content {
-    display: grid;
-    grid-gap: 16px;
-    grid-auto-flow: column;
-    margin: auto;
-    box-sizing: border-box;
-  }
-  
-  .item {
-    width: 180px;
-    height: 180px;
-    background: green;
-  }
+  width: 100%;
+  max-width: 56%;
+  position: relative;
+  margin-left: 22%;
+  margin-top: 25px;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  border-radius: 15px;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border: 3px solid #444;
+  border-radius: 10px;
+  width: 165px;
+  height: 255px;
+  background-size: cover;
+  transition: 300ms;
+}
+
+.item:hover{
+	border: 3px solid var(--color3);
+}
+
+.carPrice{
+	opacity: 0;
+	transition: 200ms;
+	color:white;
+	text-shadow: 2px 0 0 #000,0 2px 0 #000,-2px 0 0 #000,0 -2px 0 #000;
+}
+
+.item:hover .carPrice{
+	opacity: 100;
+}
+
+.carButt {
+	padding: 5px 5px;
+	text-decoration: none;
+	transition: 300ms;
+	border-radius: 15px;
+	border: 3px solid var(--color4);
+	background-color: #444;
+	color: #ccc;
+	margin-bottom: 5px;
+}
+
+.carButt:hover{
+	border: 3px solid #fff;
+	background-color: var(--color4);
+	color: #222;
+}

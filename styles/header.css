@@ -1,12 +1,16 @@
-.headerhead{
-    text-align: center;
+:root{
+	--color1: #264653;
+	--color2: #2a9d8f;
+	--color3: #e76f51;
+	--color4: #f4a261;
 }
 
-.headertext{
-    font-size: 60px;
-    text-shadow:
-    2px 2px 2px #286067,
-    4px 4px 2px #286b70,
-    6px 6px 2px #297679,
-    8px 8px 2px #2a8a88
+.headerhead {
+  text-align: center;
+}
+
+.headertext {
+  font-size: 80px;
+  text-shadow: 2px 2px 2px #286067, 4px 4px 2px #286b70, 6px 6px 2px #297679,
+    8px 8px 2px #2a8a88;
 }

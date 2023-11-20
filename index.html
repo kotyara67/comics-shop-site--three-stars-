@@ -5,6 +5,8 @@
 
 		<meta charset="utf-8" />
 
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 		<meta content="machine! turn gack!" />
 		<meta content="this place is not for you kind!" />
 
@@ -12,6 +14,7 @@
 		<link href="styles/navigationBar.css" rel="stylesheet" type="text/css" />
 		<link href="styles/catalog.css" rel="stylesheet" type="text/css" />
 		<link href="styles/header.css" rel="stylesheet" type="text/css" />
+		<link href="styles/stars.scss" rel="stylesheet" type="text/css" />
 
 		<!-- шрифт с гула, сам шрифт применяется ко всему html (зыркай в css)-->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +39,7 @@
 
 		<!-- этот будет без div'a потому-что я только пробую эту штуку (да и смысла тут в нем я не вижу)-->
 
-		<header class="headerhead">
+		<header class="headerhead stars">
 			<h1 class="headertext">
 				ТРИ ЗВЕЗДЫ
 			</h1>
@@ -87,7 +90,7 @@
 
 		<div class="catElem">
 			<div class="catDiv">
-				<img class="catImg" src="images/c5.jpg">
+				<img class="catImg" src="images/terraria.jpg">
 			</div>
 			<div class="catDiv">
 				<p class="catText lable">Terraria</p>
@@ -99,9 +102,9 @@
 			</div>
 		</div>
 
-		<div class="catElem" href="#c2">
+		<div class="catElem">
 			<div class="catDiv">
-				<img class="catImg" src="images/c2.jpg">
+				<img class="catImg" src="images/sokol.jpg">
 			</div>
 			<div class="catDiv">
 				<p class="catText lable">Сокол</p>
@@ -113,6 +116,33 @@
 			</div>
 		</div>
 
+		<div class="catElem">
+			<div class="catDiv">
+				<img class="catImg" src="images/metheora_vol2.jpg">
+			</div>
+			<div class="catDiv">
+				<p class="catText lable">Метеора</p>
+				<p class="catText description">«Метеора» — серия комиксов в жанре космической оперы, публиковавшаяся российским издательством Bubble Comics с 2014 по 2018 год.</p>
+				<p class="catText price">250₽</p>
+				<div class="catDivButt">
+					<a class="catBuyButt" href="#c1">В корзину</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="catElem">
+			<div class="catDiv">
+				<img class="catImg" src="images/inferno.jpg">
+			</div>
+			<div class="catDiv">
+				<p class="catText lable">Inferno</p>
+				<p class="catText description">Кроссоверная сюжетная линия компании Marvel Comics 1989 года, в которой в основном участвовали мутанты, а именно Сверхъестественные Люди Икс.</p>
+				<p class="catText price">250₽</p>
+				<div class="catDivButt">
+					<a class="catBuyButt" href="#c1">В корзину</a>
+				</div>
+			</div>
+		</div>
   </body>
 
 </html>
