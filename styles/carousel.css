@@ -7,9 +7,9 @@
 
 #wrapper {
   width: 100%;
-  max-width: 56%;
+  max-width: 60%;
   position: relative;
-  margin-left: 22%;
+  margin-left: 21%;
   margin-top: 25px;
 }
 
@@ -18,6 +18,14 @@
   scroll-behavior: smooth;
   scrollbar-width: none;
   border-radius: 15px;
+  border-left: solid 3px #444;
+  border-right: solid 3px #444;
+  transition: 200ms;
+}
+
+#wrapper:hover #carousel{
+  border-left: solid 3px var(--color3);
+  border-right: solid 3px var(--color3);
 }
 
 #carousel::-webkit-scrollbar {
@@ -81,6 +89,7 @@
 	transition: 200ms;
 	color:white;
 	text-shadow: 2px 0 0 #000,0 2px 0 #000,-2px 0 0 #000,0 -2px 0 #000;
+  font-size: 30px;
 }
 
 .item:hover .carPrice{

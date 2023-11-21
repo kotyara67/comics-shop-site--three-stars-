@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta content="machine! turn gack!" />
+		<meta content="this place is not for you kind!" />
+
+		<link href="styles/style.css" rel="stylesheet" type="text/css" /> <!-- конектим контр страйк сурс-->
+		<link href="styles/footer.css" rel="stylesheet" type="text/css" />
+		<link href="styles/navigationBar.css" rel="stylesheet" type="text/css" />
+		<link href="styles/catalog.css" rel="stylesheet" type="text/css" />
+		<link href="styles/stars.scss" rel="stylesheet" type="text/css" />
+
+		<!-- шрифт с гула, сам шрифт применяется ко всему html (зыркай в css)-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet"/>
+
+		<title>Магазин комиксов "три звезды"</title>
+		<!--хуй-->
+	</head>
+
+	<body>
+
+		<!-- отдельные блоки с контентом всегда будут div, внутрь которого будут вкладыватся другие штуки -->
+		<!-- разным div будем давать разный айди, чтоб применять разные стили. в CSS для нахождения id используется "#" ( #main-content{...} ) -->
+		<!-- для обозначения разных элементов есть не только id. Существует такая штука как "class" -->
+		<!-- id обычно используют для еденичных обьектов, а вот class надо присваивать множеству -->
+
+		<!-- div: 	https://developer.mozilla.org/ru/docs/Web/HTML/Element/div -->
+		<!-- id: 	https://developer.mozilla.org/ru/docs/Web/CSS/ID_selectors -->
+		<!-- class: https://developer.mozilla.org/ru/docs/Web/CSS/Class_selectors -->
+
+
+		<!-- этот будет без div'a потому-что я только пробую эту штуку (да и смысла тут в нем я не вижу)-->
+
+		<ul class="navHead">
+			<li class="navElemLeft"><a class="navLink" href="./index.html">Главная</a></li>
+			<li class="navElemLeft"><a class="navLink" href="./catalog.html">Каталог</a></li>
+			<li class="navElemLeft"><a class="navLink" href="./contacts.html">Контакты</a></li>
+			<li class="navElemRight"><a class="navCart" href="#cart">🛒</a></li>
+		</ul>
+		
+		<h1 class="lableText">
+			Где мы находимся:
+		</h1>
+		
+		<div class="yaMapDiv">
+			<iframe style="height: 600px; width: 800px;" class="yaMap" src="https://yandex.ru/map-widget/v1/?um=constructor%3A16ac8bb659e8f4071fa8d50ed28c770fb49269cf186e5461a8acb9cad3dfa2ff&amp;source=constructor" width="700" height="400" frameborder="0"></iframe>
+		</div>
+
+		<h1 class="lableText">
+			Контакты:
+		</h1>
+
+		<div class="infoDiv">
+			<p class="infoText">
+				Волкова Таисия Львовна (<a style="color: #fff;" href="tel:88008538989">8-800-853-8989</a>)
+			</p>
+			<p class="infoText">
+				Иванов Владислав Даниилович (<a style="color: #fff;" href="tel:88003069582">8-800-306-9582</a>)
+			</p>
+			<p class="infoText">
+				Давыдова Алёна Сергеевна (<a style="color: #fff;" href="tel:88008868733">8-800-886-8733</a>)
+			</p>
+			<p class="infoText">
+				Панков Иван Михайлович (<a style="color: #fff;" href="tel:88009107383">8-800-910-7383</a>)
+			</p>
+			<p class="infoText">
+				Адресс: Ростовская область, город Ростов-На-Дону, бульвар Ленина, 64
+			</p>
+			<p class="infoText">
+				<a style="color: #fff;" href="mailTo:ThreeStars@ComicsShop.su">Email: ThreeStars@ComicsShop.su</a>
+			</p>
+		</div>		
+
+	</body>
+
+	<footer class="copyright">
+		<p>©2023 Магазин комиксов «ТРИ ЗВЕЗДЫ» | Все права защищены</p>
+	</footer>
+
+</html>
